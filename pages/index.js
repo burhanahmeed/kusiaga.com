@@ -1,45 +1,52 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import Default from '../components/default.layout'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Berhan | Kusiaga</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <Default>
+      <div className={styles.container}>
+        <Head>
+          <title>Berhan | Kusiaga</title>
+        </Head>
 
-      <main className={styles.main}>
-        <header>
-          <ul style={{'padding': '0', 'listStyle': 'none'}}>
-            <li className={styles['nav-menu']}>Home</li>
-            <li className={styles['nav-menu']}>Creations</li>
-            <li className={styles['nav-menu']}>About</li>
-            <li className={styles['nav-menu']}>Blogs</li>
-          </ul>
-        </header>
-        <div className="container">
-          <div className="py3 dflex mx2">
-            <div className="image-rounded image-xl p3">
-              <img src="./img/real.jpg" loading="lazy"/>
+        <main className={styles.main} style={{'marginTop': '60px'}}>
+          <div className="container" style={{'maxWidth': '800px'}}>
+            <div className="py3 dflex mx2">
+              <div className="image-rounded image-xl px3">
+                <img src="./img/real.jpg" loading="lazy"/>
+              </div>
+              <div className="mx2 py2">
+                <p className="text-bold text-clear">Burhanuddin Ahmad</p>
+                <p className="text-clear text-xs">Software engineer, product creator, entrepreneur</p>
+              </div>
             </div>
-            <div className="mx2">
-              <p>Burhanuddin Ahmad</p>
-              <p>Software engineer, product creator, entrepreneur</p>
+            <div>
+              <p className="text-bold text-xl">{'Recent posts'.toLocaleUpperCase()}</p>
+              <span>I write about tech related but sometimes non-tech topics. Written in Bahasa Indonesia, Want to read English version? check my <a href="#" className="link-border-bottom">dev.to</a></span>
+              {/* blog wrapper */}
+              <div className="mt5">
+                {
+                  [1, 2,1,1].map(el => {
+                    return (
+                      <div className="pointer">
+                        {/* blog item */}
+                        <div className="my2">
+                          <p className="text-clear">May 20, 2020 (5 months ago)</p>
+                        </div>
+                        <p className="blog-title text-clear text-bold text-3xl mb1">Bagaimana Saya Membuat Manipulasi Zona Waktu Time.ts pada Deno</p>
+                        <p className="text-clear text-xl">Membuat library sederhana DenoLand</p>
+                        <hr className="gradient-border"/>
+                      </div>
+                    )
+                  })
+                }
+              </div>
             </div>
           </div>
-        </div>
-      </main>
+        </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://twitter.com/burhannahm"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          A personal site by @burhannahm
-        </a>
-      </footer>
-    </div>
+      </div>
+    </Default>
   )
 }
