@@ -2,11 +2,13 @@ import Head from 'next/head'
 import Default from '../components/default.layout'
 import styles from '../styles/Home.module.css'
 import { getAllPosts } from '../lib/creationApi'
+import { useEffect, useState } from 'react'
 
 const CreationItem = ({ data }) => {
   let coverImg = data.coverImage
+  let width = useWidth()
   return (
-    <div style={{ display: 'flex' }} className={styles['creation-item']}>
+    <div style={{ display: width < 600 ? 'block' : 'flex' }} className={styles['creation-item']}>
       <div>
         <div className={styles['creation-image']} style={{ 'backgroundImage': 'url('+coverImg+')' }} />
       </div>
@@ -27,6 +29,7 @@ const CreationItem = ({ data }) => {
 }
 
 export default function Creations({ allPosts }) {
+  let width = useWidth()
   return (
     <Default>
       <div className={styles.container}>
@@ -34,7 +37,7 @@ export default function Creations({ allPosts }) {
           <title>Creations | Kusiaga</title>
         </Head>
 
-        <main className={styles.main} style={{'marginTop': '60px', 'maxWidth': '700px'}}>
+        <main className={styles.main} style={{'marginTop': '60px', 'maxWidth': `${width}px`}}>
           <div style={{'width': '100%', 'textAlign': 'left'}}>
             <p className="text-clear text-bold text-3xl my2">Creations</p>
             <p className="text-clear text-xl">The list of stuffs I have created or maintained that I can publish openly.</p>
@@ -68,4 +71,17 @@ export async function getStaticProps() {
   return {
     props: { allPosts },
   }
+}
+
+const useWidth = () => {
+  let [width, setWidth] = useState(700)
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      let xwidth = window.innerWidth
+      if (xwidth < 700) {
+        setWidth(xwidth - 30)
+      }
+    }
+  }, [])
+  return width
 }

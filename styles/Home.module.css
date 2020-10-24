@@ -148,9 +148,35 @@
   box-shadow: 0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -1px rgba(0,0,0,.06) !important;
 }
 
+@media (max-width: 800px) {
+  .creation-item {
+    height: auto;
+    width: 650px;
+  }
+}
+
 @media (max-width: 600px) {
+  .creation-item {
+    height: auto;
+    width: 550px;
+  }
   .grid {
     width: 100%;
     flex-direction: column;
   }
 }
+
+@media (max-width: 500px) {
+  .creation-item {
+    height: auto;
+    width: 450px;
+  }
+}
+
+@media (max-width: 400px) {
+  .creation-item {
+    height: auto;
+    width: 300px;
+  }
+}
+
