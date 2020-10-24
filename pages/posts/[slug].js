@@ -6,14 +6,39 @@ import PostBody from '../../components/posts/postBody'
 import styles from '../../styles/Home.module.css'
 import {useState, useEffect} from 'react'
 import PostHeader from '../../components/posts/postHeading'
+import Disqus from "disqus-react"
 
 export default function dynamicCreation ({ post, morePosts, preview  }) {
   let width = useWidth()
+  let desc = post.excerpt
+  let title = post.title
+  let previewImage = post.previewImage
+
+  const disqusShortname = "kusiaga"
+  const disqusConfig = {
+    url: `https://kusiaga.com/posts/${post.slug}`,
+    identifier: post.slug,
+    title: post.title
+  }
+
+
   return (
     <Default>
       <div className={styles.container}>
         <Head>
-          <title>Berhan | Kusiaga</title>
+          <title>{post.title} | Kusiaga</title>
+          <meta name="description" content={desc}></meta>
+ 
+          {/* Open Graph */}
+          <meta property="og:title" content={title} key="ogtitle" />
+          <meta property="og:description" content={desc} key="ogdescription" />
+          <meta property="og:url" content="https://kusiaga.com" key="ogurl" />
+          <meta property="og:image" content={previewImage} key="ogimage" />
+          <meta property="og:site_name" content="kusiaga" key="ogsitename" />
+          
+          {/* Twitter */}
+          <meta name="twitter:card" content="summary_large_image" key="twcard" />
+          <meta name="twitter:creator" content="@burhannahm" key="twhandle" />
         </Head>
 
         <main className={styles.main} style={{'marginTop': '60px', 'maxWidth': `${width}px`}}>
@@ -23,6 +48,12 @@ export default function dynamicCreation ({ post, morePosts, preview  }) {
             content={post.content}
           />
           <PostBody content={post.content} />
+          <div style={{ width: '100%' }} className="my4">
+            <Disqus.DiscussionEmbed
+              shortname={disqusShortname}
+              config={disqusConfig}
+            />
+          </div>
         </main>
       </div>
     </Default>

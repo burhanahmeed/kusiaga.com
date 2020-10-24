@@ -1,9 +1,6 @@
 ---
 title: Bagaimana Saya Membuat Manipulasi Zona Waktu Time.ts pada Deno
-excerpt: Deno baru saja meluncur pada bulan May 2020 lalu, namun hypenya sudah
-  begitu terasa dikalangan JS/TS developer. Ratusan library / module sudah
-  langsung muncul sejak hari pertama Deno dirilis.  Namun sepertinya untuk
-  manipulasi timezone masih belum mendukung, dan lahirlah Time.ts.
+excerpt: Belajar Membuat library sederhana untuk melakukan manipulasi waktu pada Deno.
 date: '2020-06-07T02:11:58.682Z'
 previewImage: /img/posts/time.ts-mod.jpg
 ---

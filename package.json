@@ -11,11 +11,13 @@
   "dependencies": {
     "@mdx-js/loader": "^1.6.19",
     "@next/mdx": "^9.5.5",
+    "disqus-react": "^1.0.10",
     "gray-matter": "^4.0.2",
     "moment": "^2.29.1",
     "next": "9.5.5",
     "react": "17.0.0",
     "react-dom": "17.0.0",
+    "reading-time": "^1.2.0",
     "remark": "^13.0.0",
     "remark-html": "^13.0.1"
   }

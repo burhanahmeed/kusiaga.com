@@ -23,7 +23,7 @@ export default function Layout({ children }) {
         <meta property="og:site_name" content="kusiaga" key="ogsitename" />
         
         {/* Twitter */}
-        <meta name="twitter:card" content="summary" key="twcard" />
+        <meta name="twitter:card" content="summary_large_image" key="twcard" />
         <meta name="twitter:creator" content="@burhannahm" key="twhandle" />
 
       </Head>

@@ -32,12 +32,12 @@ export default function Home({allPosts}) {
                 {
                   allPosts.map(el => {
                     return (
-                      <div className="pointer">
+                      <div className={styles['post-item']}>
                         {/* blog item */}
                         <div className="my2">
-                          <p className="text-clear">{moment(el.date).format('LL')} ({moment(el.date).fromNow()})</p>
+                          <p className="text-clear text-2xs" style={{ color: 'gray' }}>{moment(el.date).format('LL')} ({moment(el.date).fromNow()})</p>
                         </div>
-                        <p className="blog-title text-clear text-bold text-3xl mb1">
+                        <p className="pointer blog-title text-clear text-bold text-3xl mb1">
                           <Link href={`/posts/${el.slug}`}>{el.title}</Link>
                         </p>
                         <p className="text-clear text-xl">{el.excerpt}</p>
