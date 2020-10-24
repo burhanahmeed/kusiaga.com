@@ -25,3 +25,25 @@ a {
   border: 0px none;
   background-image: linear-gradient(90deg,transparent,#0606061c,transparent);
 }
+
+.markdowncss img {
+  width: 700px;
+}
+
+@media (max-width: 600px) {
+  .markdowncss img {
+    width: 550px;
+  } 
+}
+
+@media (max-width: 500px) {
+  .markdowncss img {
+    width: 450px;
+  } 
+}
+
+@media (max-width: 400px) {
+  .markdowncss img {
+    width: 320px;
+  } 
+}

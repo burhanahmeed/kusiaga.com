@@ -1,8 +1,11 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Default from '../components/default.layout'
+import { getAllPosts } from '../lib/postApi'
+import moment from 'moment'
+import Link from 'next/link'
 
-export default function Home() {
+export default function Home({allPosts}) {
   return (
     <Default>
       <div className={styles.container}>
@@ -27,15 +30,17 @@ export default function Home() {
               {/* blog wrapper */}
               <div className="mt5">
                 {
-                  [1, 2,1,1].map(el => {
+                  allPosts.map(el => {
                     return (
                       <div className="pointer">
                         {/* blog item */}
                         <div className="my2">
-                          <p className="text-clear">May 20, 2020 (5 months ago)</p>
+                          <p className="text-clear">{moment(el.date).format('LL')} ({moment(el.date).fromNow()})</p>
                         </div>
-                        <p className="blog-title text-clear text-bold text-3xl mb1">Bagaimana Saya Membuat Manipulasi Zona Waktu Time.ts pada Deno</p>
-                        <p className="text-clear text-xl">Membuat library sederhana DenoLand</p>
+                        <p className="blog-title text-clear text-bold text-3xl mb1">
+                          <Link href={`/posts/${el.slug}`}>{el.title}</Link>
+                        </p>
+                        <p className="text-clear text-xl">{el.excerpt}</p>
                         <hr className="gradient-border"/>
                       </div>
                     )
@@ -49,4 +54,18 @@ export default function Home() {
       </div>
     </Default>
   )
+}
+
+export async function getStaticProps() {
+  const allPosts = getAllPosts([
+    'title',
+    'date',
+    'excerpt',
+    'previewImage',
+    'slug'
+  ])
+
+  return {
+    props: { allPosts },
+  }
 }

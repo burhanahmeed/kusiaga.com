@@ -1,5 +1,6 @@
 import '../styles/globals.css'
 import '../styles/personalCss.css'
+import '../styles/markdown-github.css'
 import {MDXProvider} from '@mdx-js/react'
 
 const mdComponents = {
