@@ -129,6 +129,25 @@
   background-image: linear-gradient(90deg,transparent,#0606061c,transparent);
 }
 
+/* creations page */
+.creation-image {
+  height: 150px;
+  width: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.creation-item {
+  width: 800px;
+  height: 150px;
+  background-color: white;
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05) !important;
+  border-radius: 5px;
+  margin: 15px 0;
+}
+.creation-item:hover {
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -1px rgba(0,0,0,.06) !important;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
