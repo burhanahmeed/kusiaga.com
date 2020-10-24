@@ -7,6 +7,7 @@ import styles from '../../styles/Home.module.css'
 import {useState, useEffect} from 'react'
 import PostHeader from '../../components/posts/postHeading'
 import Disqus from "disqus-react"
+import Prism from "prismjs";
 
 export default function dynamicCreation ({ post, morePosts, preview  }) {
   let width = useWidth()
@@ -21,6 +22,9 @@ export default function dynamicCreation ({ post, morePosts, preview  }) {
     title: post.title
   }
 
+  useEffect(() => {
+    Prism.highlightAll();
+  }, [])
 
   return (
     <Default>
