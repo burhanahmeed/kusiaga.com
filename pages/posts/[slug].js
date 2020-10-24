@@ -39,6 +39,8 @@ export default function dynamicCreation ({ post, morePosts, preview  }) {
           {/* Twitter */}
           <meta name="twitter:card" content="summary_large_image" key="twcard" />
           <meta name="twitter:creator" content="@burhannahm" key="twhandle" />
+          <meta name="twitter:image" content={previewImage} key="twimage"/>
+          <meta name="twitter:url" content={`https://kusiaga.com/posts/${post.slug}`} key="twurl"/>
         </Head>
 
         <main className={styles.main} style={{'marginTop': '60px', 'maxWidth': `${width}px`}}>
