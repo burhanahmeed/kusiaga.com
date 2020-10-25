@@ -31,7 +31,7 @@ export default function Home({allPosts}) {
                 backgroundColor: 'white'
               }}
             >
-              <p className="text-clear">Available as a freelance/consultant for small gig or less than 8 hrs per week.</p>
+              <p className="text-clear">Available as a freelancer/consultant for small gig or less than 8 hrs per week.</p>
               <a className="link-border-bottom" href="mailto:brhn@kusiaga.com">📧 Business inquiries</a>
             </div>
             <div>
