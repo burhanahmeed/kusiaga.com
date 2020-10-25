@@ -15,7 +15,7 @@ const CreationItem = ({ data }) => {
       <div className="px4 py2">
         <div style={{ overflow: 'hidden', textOverflow: 'ellipsis', height: data.url ? '89%' : '100%' }}>
           <p className="text-clear blog-title pointer text-4xl text-bold">{data.title}</p>
-          <p className="text-clear text-2xs mt1">Stacks: {data.stacks}</p>
+          <p className="text-clear text-2xs mt1">tags: {data.stacks}</p>
           <p className="text-clear mt2" style={{ color: '#3c3c3c' }} title={data.excerpt}>{data.excerpt}</p>
         </div>
         {
