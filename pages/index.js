@@ -24,15 +24,25 @@ export default function Home({allPosts}) {
                 <p className="text-clear text-xs">Software engineer, product creator, entrepreneur</p>
               </div>
             </div>
+            <div 
+              style={{ 
+                borderLeft: '2px orange solid', 
+                padding: '10px',
+                backgroundColor: 'white'
+              }}
+            >
+              <p className="text-clear">Available as a freelance/consultant for small gig or less than 8 hrs per week.</p>
+              <a className="link-border-bottom" href="mailto:brhn@kusiaga.com">📧 Business inquiries</a>
+            </div>
             <div>
               <p className="text-bold text-xl">{'Recent posts'.toLocaleUpperCase()}</p>
-              <span>I write about tech related but sometimes non-tech topics. Written in Bahasa Indonesia, Want to read English version? check my <a href="#" className="link-border-bottom">dev.to</a></span>
+              <span>I write about tech related but sometimes non-tech topics. Written in Bahasa Indonesia, Want to read English version? check my <a href="https://dev.to/burhanahmeed" target="_blank" className="link-border-bottom">dev.to</a></span>
               {/* blog wrapper */}
               <div className="mt5">
                 {
-                  allPosts.map(el => {
+                  allPosts.map((el, idx) => {
                     return (
-                      <div className={styles['post-item']}>
+                      <div className={styles['post-item']} key={idx}>
                         {/* blog item */}
                         <div className="my2">
                           <p className="text-clear text-2xs" style={{ color: 'gray' }}>{moment(el.date).format('LL')} ({moment(el.date).fromNow()})</p>
