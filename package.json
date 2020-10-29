@@ -14,7 +14,7 @@
     "disqus-react": "^1.0.10",
     "gray-matter": "^4.0.2",
     "moment": "^2.29.1",
-    "next": "9.5.5",
+    "next": "10.0.0",
     "nprogress": "^0.2.0",
     "prismjs": "^1.22.0",
     "react": "17.0.0",
