@@ -45,8 +45,8 @@ export default function Creations({ allPosts }) {
           </div>
           <div className="py3 my5">
             {
-              allPosts.map(el => {
-                return <CreationItem data={el} />
+              allPosts.map((el, idx) => {
+                return <CreationItem key={idx} data={el} />
               })
             }
           </div>
