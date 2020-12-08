@@ -30,6 +30,13 @@ export default function contact () {
               src="/img/github.svg" width="30"
             />
           </a>
+          <a target="_blank" href="https://stackoverflow.com/users/6345936/kusiaga" className="p2">
+            <img
+              style={{"borderRadius": "100%"}} 
+              alt="Example image" 
+              src="/img/stackoverflow.png" width="35"
+            />
+          </a>
       </div>
     </div>
   )
