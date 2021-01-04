@@ -26,6 +26,22 @@ export default function Layout({ children }) {
         <meta name="twitter:card" content="summary_large_image" key="twcard" />
         <meta name="twitter:creator" content="@burhannahm" key="twhandle" />
 
+        {/* google analytics */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=UA-112771033-3"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', 'UA-112771033-3');
+              `,
+          }}
+        />
+
       </Head>
       <header className={styles.header}>
         <ul style={{'padding': '0', 'margin': '0', 'listStyle': 'none'}}>
