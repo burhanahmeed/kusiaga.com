@@ -35,7 +35,7 @@ export default function Home({allPosts}) {
               style={{ 
                 borderLeft: '2px orange solid', 
                 padding: '10px',
-                backgroundColor: 'white'
+                backgroundColor: '#a9a9a92b'
               }}
             >
               <p className="text-clear">Available as a freelancer/consultant for small gig or less than 8 hrs per week.</p>
