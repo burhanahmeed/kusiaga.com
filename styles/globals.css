@@ -2,9 +2,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-color: #fdfffc;
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(246, 247, 248);
 }
 
 a {
@@ -17,7 +16,7 @@ a {
 }
 
 .blog-title:hover {
-  color: #52089d;
+  color: #3B82F6;
 }
 .gradient-border {
   height: 1px;
@@ -28,6 +27,10 @@ a {
 
 .markdowncss img {
   width: 700px;
+}
+
+.shadow {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
 @media (max-width: 600px) {

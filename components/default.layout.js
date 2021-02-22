@@ -1,11 +1,14 @@
 import styles from '../styles/Home.module.css'
 import Head from 'next/head'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 export default function Layout({ children }) {
   let desc = "A personal site by @burhannahm. Built with Next.js."
   let title = "@burhannahm persoanl site"
   let previewImage = "/img/og.png"
+
+  const router = useRouter();
   return (
     <div>
       <Head>
@@ -42,16 +45,20 @@ export default function Layout({ children }) {
           }}
         />
 
+        <link rel="preconnect" href="https://fonts.gstatic.com"/>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet"/> 
+
+        
       </Head>
       <header className={styles.header}>
         <ul style={{'padding': '0', 'margin': '0', 'listStyle': 'none'}}>
-          <li className={styles['nav-menu']}>
+          <li className={`${styles['nav-menu']} ${router.pathname == '/' ? styles['nav-active']: ''}`}>
             <Link href="/">Home</Link>
           </li>
-          <li className={styles['nav-menu']}>
-            <Link href="/creations">Creations</Link>
+          <li className={`${styles['nav-menu']} ${router.pathname == '/projects' ? styles['nav-active']: ''}`}>
+            <Link href="/projects">Projects</Link>
           </li>
-          <li className={styles['nav-menu']}>
+          <li className={`${styles['nav-menu']} ${router.pathname == '/about' ? styles['nav-active']: ''}`}>
             <Link href="/about">About</Link>
           </li>
         </ul>

@@ -140,9 +140,11 @@
 .text-clear {margin: 0;padding: 0;}
 
 /* link */
-a:hover {border-bottom: 1px solid black;}
-.link-border-bottom {border-bottom: 1px solid black;}
-.link-border-bottom:hover {border-bottom: none;}
+a:hover {border-bottom: 1px solid #3B82F6;}
+.link-border-bottom {color: #3B82F6;}
+.link-border-bottom:hover {border-bottom: 1px solid #3B82F6;}
+
+
 
 /* border */
 .border-bottom {border-bottom: 1px solid black;}

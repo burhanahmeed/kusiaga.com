@@ -13,16 +13,15 @@ const CreationItem = ({ data }) => {
         <div className={styles['creation-image']} style={{ 'backgroundImage': 'url('+coverImg+')' }} />
       </div>
       <div className="px4 py2">
-        <div style={{ overflow: 'hidden', textOverflow: 'ellipsis', height: data.url ? '89%' : '100%' }}>
-          <p className="text-clear blog-title pointer text-4xl text-bold">{data.title}</p>
+        <div style={{ overflow: 'hidden', textOverflow: 'ellipsis' }}>
+          <a 
+            href={data.url?data.url:'javascript:;'} 
+            target={data.url?"_blank":''} 
+            className="text-clear blog-title pointer text-4xl text-bold"
+          >{data.title}</a>
           <p className="text-clear text-2xs mt1">tags: {data.stacks}</p>
           <p className="text-clear mt2" style={{ color: '#3c3c3c' }} title={data.excerpt}>{data.excerpt}</p>
         </div>
-        {
-          data.url ? (
-            <a href={data.url} target="_blank" style={{ backgroundColor: '#52089d', color: 'white' }}>👉 here</a>
-          ) : ''
-        }
       </div>
     </div>
   )
@@ -34,7 +33,7 @@ export default function Creations({ allPosts }) {
     <Default>
       <div className={styles.container}>
         <Head>
-          <title>Creations | Kusiaga</title>
+          <title>Projects | Kusiaga</title>
         </Head>
 
         <main className={styles.main} style={{'marginTop': '60px', 'maxWidth': `${width}px`}}>

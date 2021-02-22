@@ -12,8 +12,8 @@ Router.events.on('routeChangeComplete', () => NProgress.done())
 Router.events.on('routeChangeError', () => NProgress.done())
 
 const mdComponents = {
-  h1: props => <h1 style={{color: '#52089d'}} {...props} />,
-  a: props => <a style={{color: '#52089d'}} {...props} />
+  h1: props => <h1 style={{color: '#3B82F6'}} {...props} />,
+  a: props => <a style={{color: '#3B82F6'}} {...props} />
 }
 
 function MyApp({ Component, pageProps }) {

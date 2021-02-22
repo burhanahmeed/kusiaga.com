@@ -20,6 +20,15 @@
   padding: 1rem;
   cursor: pointer;
 }
+.nav-menu a:hover {
+  opacity: .6;
+  border-bottom: none !important;
+}
+.nav-active {
+  font-weight: bold;
+  background-color: #0070f3;
+  color: white;
+}
 
 .footer {
   width: 100%;
@@ -124,9 +133,9 @@
   width: 100%;
   text-align: center;
   position: fixed;
-  background-color: #ecebeb;
+  background-color: #F3F4F6;
   border: 0px none;
-  background-image: linear-gradient(90deg,transparent,#0606061c,transparent);
+  background-image: linear-gradient(90deg,transparent,#F3F4F6,transparent);
 }
 
 /* home index */
@@ -135,7 +144,7 @@
   padding: 15px;
 }
 .post-item:hover {
-  background-color: #a9a9a92b;
+  background-color: #fff;
 }
 
 /* creations page */
