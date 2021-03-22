@@ -27,7 +27,7 @@ export default function Home({allPosts}) {
                 /> */}
               </div>
               <div className="mx2 py2">
-                <p className="text-bold text-clear">Burhanuddin Ahmad</p>
+                <p className="text-bold text-clear">Burhanuddin Ahmed</p>
                 <p className="text-clear text-xs">Software engineer, product creator, entrepreneur</p>
               </div>
             </div>
