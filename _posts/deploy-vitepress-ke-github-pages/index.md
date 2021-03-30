@@ -65,4 +65,4 @@ Lalu masuk ke setting repositori, kemudian ubah branch untuk Github page ke `gh-
 
 🎉🎉 Happy coding!!!
 
-Jangan lupa tengok https://12sync.github.io/vue-modal-2/
+Jangan lupa tengok https://initbase.github.io/vue-modal-2/
