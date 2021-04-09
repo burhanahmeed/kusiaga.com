@@ -125,7 +125,7 @@ CICD in Gitlab, I need to create YML file in root directory of my repo.
 
 I followed [this article](https://adhasmana.medium.com/how-to-deploy-node-js-app-on-aws-with-gitlab-24fabde1088d) with my own modification.
 
-Don't forge to add `DEPLOY_SERVERS` and `PRIVATE_KEY` to Gitlab CICD variable.
+Don't forget to add `DEPLOY_SERVERS` and `PRIVATE_KEY` to Gitlab CICD variable.
 
 > DEPLOY_SERVERS = my ip server
 >
