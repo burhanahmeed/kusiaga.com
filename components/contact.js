@@ -16,7 +16,7 @@ export default function contact () {
               src="/img/twitter.svg" width="30"
             />
           </a>
-          <a target="_blank" href="mailto:brhn@kusiaga.com" className="p2">
+          <a target="_blank" href="mailto:burhanahmeed@gmail.com" className="p2">
             <img
               style={{"borderRadius": "100%"}} 
               alt="Example image" 
