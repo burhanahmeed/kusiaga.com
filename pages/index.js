@@ -39,8 +39,8 @@ export default function Home({allPosts}) {
               }}
               className="shadow"
             >
-              <p className="text-clear">Available as a freelancer/consultant for small gig or less than 6 hrs per week.</p>
-              <a className="link-border-bottom" href="mailto:brhn@kusiaga.com">📧 Business inquiries</a>
+              <p className="text-clear">Available as a freelancer/consultant for small gig or less than 3 hrs per week.</p>
+              <a className="link-border-bottom" href="mailto:burhanahmeed@gmail.com">📧 Business inquiries</a>
             </div>
             <div>
               <p className="text-bold text-xl">{'Recent posts'.toLocaleUpperCase()}</p>
