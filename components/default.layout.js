@@ -48,7 +48,21 @@ export default function Layout({ children }) {
         <link rel="preconnect" href="https://fonts.gstatic.com"/>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet"/> 
 
-        
+        <script>
+          var txt = "by TinyJar"; //text to show on widget like by YourName
+          var style = 2; //1 for button rectangle, 2 for floating circle
+          var position = 1;//1 for right, 2 for left
+          var kofi = 1; //1 to show 0 to hide
+          var kofi_url = "https://ko-fi.com/burhanahmeed"; //Ko-Fi profile url
+          var bmc = 1; //1 to show 0 to hide
+          var bmc_url = "https://www.buymeacoffee.com/zOkT07A"; //BuyMeACoffee profile url
+          var patreon = 1; //1 to show 0 to hide
+          var pat_url = "https://patreon.com/burhannahm"; //Patreon profile url
+          var paypal = 0; //1 to show 0 to hide
+          var pp_url = "";//PayPal URL
+        </script>
+        <link rel="stylesheet" href="https://free-tiny.b-cdn.net/tinyjar.css"/>
+        <script src="https://free-tiny.b-cdn.net/tinyjar-script.js"></script>
       </Head>
       <header className={styles.header}>
         <ul style={{'padding': '0', 'margin': '0', 'listStyle': 'none'}}>
