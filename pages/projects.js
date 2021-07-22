@@ -3,6 +3,7 @@ import Default from '../components/default.layout'
 import styles from '../styles/Home.module.css'
 import { getAllPosts } from '../lib/creationApi'
 import { useEffect, useState } from 'react'
+import { motion } from "framer-motion"
 
 const CreationItem = ({ data }) => {
   let coverImg = data.coverImage
@@ -29,6 +30,30 @@ const CreationItem = ({ data }) => {
 
 export default function Creations({ allPosts }) {
   let width = useWidth()
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        delayChildren: 0.4
+      }
+    }
+  }
+  
+  const item = {
+    hidden: {
+      scale: 0,
+      opacity: 0,
+    },
+    show: {
+      scale: 1,
+      opacity: 1,
+      transition: {
+        duration: 0.3
+      }
+    }
+  }
+
   return (
     <Default>
       <div className={styles.container}>
@@ -42,13 +67,22 @@ export default function Creations({ allPosts }) {
             <p className="text-clear text-xl">The list of stuffs I have created or maintained that I can publish openly.</p>
             <p className="text-clear text-md">(Check my <a className="link-border-bottom" target="_blank" href="https://github.com/burhanahmeed">Github</a> for more.)</p>
           </div>
-          <div className="py3 my5">
+          <motion.div
+            className="py3 my5"
+            variants={container}
+            initial="hidden"
+            animate="show"
+          >
             {
               allPosts.map(el => {
-                return <CreationItem data={el} />
+                return (
+                  <motion.div variants={item}>
+                    <CreationItem data={el} />
+                  </motion.div>
+                )
               })
             }
-          </div>
+          </motion.div>
         </main>
 
       </div>
