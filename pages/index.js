@@ -43,14 +43,14 @@ export default function Home({allPosts}) {
           <div className="container" style={{'maxWidth': '800px'}}>
             <div className="py3 dflex mx2">
               <div className="image-rounded image-xl px3">
-                {/* <img src="./img/real.jpg" loading="lazy"/> */}
-                <Image
+                <img src="./img/real.jpg" loading="lazy"/>
+                {/* <Image
                   src="/img/real.jpg"
                   alt="Picture of the author"
                   placeholder="blur"
                   width={64}
                   height={64}
-                />
+                /> */}
               </div>
               <div className="mx2 py2">
                 <p className="text-bold text-clear">Burhanuddin Ahmed</p>
