@@ -4,7 +4,6 @@ import Default from '../components/default.layout'
 import { getAllPosts } from '../lib/postApi'
 import moment from 'moment'
 import Link from 'next/link'
-import Image from 'next/image'
 import { motion } from "framer-motion"
 
 export default function Home({allPosts}) {
@@ -44,13 +43,6 @@ export default function Home({allPosts}) {
             <div className="py3 dflex mx2">
               <div className="image-rounded image-xl px3">
                 <img src="./img/real.jpg" loading="lazy"/>
-                {/* <Image
-                  src="/img/real.jpg"
-                  alt="Picture of the author"
-                  placeholder="blur"
-                  width={64}
-                  height={64}
-                /> */}
               </div>
               <div className="mx2 py2">
                 <p className="text-bold text-clear">Burhanuddin Ahmed</p>
