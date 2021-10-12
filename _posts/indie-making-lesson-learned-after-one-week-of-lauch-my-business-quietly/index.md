@@ -1,5 +1,5 @@
 ---
-title: "(Indie making): Lesson Learned After One Week of Lauch My Business Quietly"
+title: "Lesson Learned After One Week Launching My Business Quietly"
 excerpt: Takeaway working with sales and marketing after one month of application development.
 date: '2021-05-23T19:11:58.682Z'
 previewImage: https://www.indiehackers.com/images/shareables/home.jpg
