@@ -1,6 +1,11 @@
 export default function Container({ children }) {
   return (
-    <div className="md:container md:mx-auto pt-16">
+    <div
+      className="sm:mx-auto pt-16"
+      style={{
+        maxWidth: '800px'
+      }}
+    >
       { children }
     </div>
   )
