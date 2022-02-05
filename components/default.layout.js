@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 export default function Layout({ children }) {
-  let desc = "A personal site by @burhannahm. Built with Next.js."
+  let desc = "A personal site by @burhannahm."
   let title = "@burhannahm persoanl site"
   let previewImage = "/img/og.png"
 
@@ -21,9 +21,9 @@ export default function Layout({ children }) {
         {/* Open Graph */}
         <meta property="og:title" content={title} key="ogtitle" />
         <meta property="og:description" content={desc} key="ogdescription" />
-        <meta property="og:url" content="https://kusiaga.com" key="ogurl" />
+        <meta property="og:url" content="https://brhn.my.id" key="ogurl" />
         <meta property="og:image" content={previewImage} key="ogimage" />
-        <meta property="og:site_name" content="kusiaga" key="ogsitename" />
+        <meta property="og:site_name" content="brhn" key="ogsitename" />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" key="twcard" />
