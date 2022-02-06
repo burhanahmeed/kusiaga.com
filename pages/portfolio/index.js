@@ -3,14 +3,13 @@ import Head from 'next/head'
 import Container from '@/components/layouts/Container'
 import Button from '@/components/Button'
 import { getContents } from '@/lib/fetchContent'
-
-const IMAGE = 'https://www.poltekkes-solo.ac.id/cni-content/themes/poltekkes/images/noimage.jpg'
+import { IMAGE } from '@/constants'
 
 export default function Portfolio({ contents }) {
   const [portfolios, setPortfolios] = useState([])
 
   useEffect(() => {
-    const sortedPortfolio = contents.sort((a, b) => b.date - a.date)
+    const sortedPortfolio = contents.sort((a, b) => new Date(b.date) - new Date(a.date))
     setPortfolios(sortedPortfolio)
   }, [])
 
