@@ -1,8 +1,9 @@
 import Head from 'next/head'
 import Container from '@/components/layouts/Container'
 import Button from '@/components/Button'
+import { getContents } from '@/lib/fetchContent'
 
-export default function Portfolio() {
+export default function Portfolio({ contents }) {
   return (
     <Container>
       <Head>
@@ -52,4 +53,21 @@ export default function Portfolio() {
       </div>
     </Container>
   )
+}
+
+export async function getStaticProps() {
+  const contents = getContents('contents/portfolios', [
+    'slug',
+    'name',
+    'thumbnail',
+    'description',
+    'tag',
+    'date'
+  ])
+
+  console.log(contents);
+
+  return {
+    props: { contents }
+  }
 }
