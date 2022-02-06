@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react'
 import Head from 'next/head'
+import Link from 'next/link'
+
 import Container from '@/components/layouts/Container'
 import Button from '@/components/Button'
 import { getContents } from '@/lib/fetchContent'
@@ -48,7 +50,9 @@ export default function Portfolio({ contents }) {
                 <div className="p-2 md:w-3/4 space-y-2">
                   <div>
                     <h1 className="md:text-base font-bold">{ portofolio.name }</h1>
-                    <span className="text-xs text-blue-500 pointer hover:underline font-bold">Read more</span>
+                    <Link href={'/portfolio/' + portofolio.slug}>
+                      <span className="text-xs text-blue-500 pointer hover:underline font-bold">Read more</span>
+                    </Link>
                   </div>
                   <p className="text-xs">{ portofolio.description }</p>
                   <div className="space-x-2 inline-block">
