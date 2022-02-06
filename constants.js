@@ -1,0 +1,1 @@
+export const IMAGE = 'https://www.poltekkes-solo.ac.id/cni-content/themes/poltekkes/images/noimage.jpg'
