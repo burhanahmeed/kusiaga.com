@@ -3,6 +3,7 @@ title: "Belajar VueJS: Membuat Blog dengan VueJS dan NetlifyCMS."
 excerpt: Membuat blog dengan menggunakan teknologi Gridsome dan NetlifyCMS.
 date: '2020-04-25T17:00:00.000Z'
 previewImage: /img/posts/external-content.duckduckgo.com.jpeg
+lang: Indonesian
 ---
 
 Jika dulu bila ingin membuat sebuah website atau blog biasanya menggunakan Wordpress atau Blogspot, benar? Namun sekarang ini pendekatan yang dapat digunakan untuk membuat sebuah blog sangat banyak selain menggunakan Wordpress atau Blogspot. Salah satunya dengan hadirnya teknologi modern framework yang dapat di*convert* menjadi *static site.* Ada banyak pilihan teknologi yang dapat digunakan dalam membuat sebuah Blog, bila tidak ingin repot bisa menggunakan Jekyll, Hugo, Gatsby, atau VuePress. Namun kali ini saya akan menggunakan VueJS namun bukan VuePress melainkan Gridsome.

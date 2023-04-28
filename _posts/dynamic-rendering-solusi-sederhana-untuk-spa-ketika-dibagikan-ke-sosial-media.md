@@ -3,6 +3,7 @@ title: Dynamic Rendering, Solusi Sederhana untuk SPA Ketika Dibagikan ke Sosial 
 excerpt: Dengan menggunakan dynamic rendering maka tidak perlu khawatir lagi ketika membagikan link ke Twitter atau Facebook.
 date: '2020-05-10T05:35:07.322Z'
 previewImage: /img/posts/dynamic-rendering-.jpg
+lang: Indonesian
 ---
 
 Untuk artikel versi berbahasa Inggris [dapat anda temukan disini](https://dev.to/burhanahmeed/dynamic-rendering-simple-solution-for-spa-when-shared-on-social-media-amd).

@@ -3,6 +3,7 @@ title: "Personal Notes (English): Doing Gitlab CI CD In My Dirty Way"
 excerpt: My personal notes about CI CD and DevOps stufss in a dirty way.
 date: '2021-04-08T13:11:58.682Z'
 previewImage: https://deanna.dev/images/cicd.png
+lang: English
 ---
 
 

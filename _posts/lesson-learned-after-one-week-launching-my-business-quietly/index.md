@@ -3,6 +3,7 @@ title: "Lesson Learned After One Week Launching My Business Quietly"
 excerpt: Takeaway working with sales and marketing after one month of application development.
 date: '2021-05-23T19:11:58.682Z'
 previewImage: https://www.indiehackers.com/images/shareables/home.jpg
+lang: English
 ---
 
 After one month of product development, I tried spending one week after launch [my business](https://getmakerlog.com/products/walimah) quietly to work on sales and marketing. Although my self is a tech person but marketing and sales stuffs are not that strage to me. I have built some businesses since I was a freshman in university, so marketing and sales things are quite familiar with me (familiar but not an expert).

@@ -3,6 +3,7 @@ title: Deploy VitePress ke Github Pages
 excerpt: Melakukan deployment VitePress ke Github pages sedikit membingungkan, namun saya berhasil melakukan hack sederhana.
 date: '2021-03-05T13:11:58.682Z'
 previewImage: https://pbs.twimg.com/media/EvpN9nRXcAAk2M4?format=jpg&name=4096x4096
+lang: English
 ---
 
 Saya mencoba melakukan deployment Vitepress ke Github pages kemarin (4 maret 2021). Langsung saya lihat ke dokumentasi Vitepress, cukup straightfoward docsnya. 
