@@ -3,6 +3,7 @@ title: Bagaimana Saya Membuat Manipulasi Zona Waktu Time.ts pada Deno
 excerpt: Belajar Membuat library sederhana untuk melakukan manipulasi waktu pada Deno.
 date: '2020-06-07T02:11:58.682Z'
 previewImage: /img/posts/time.ts-mod.jpg
+lang: Indonesian
 ---
 Deno baru saja meluncur pada bulan May 2020 lalu, namun hypenya sudah begitu terasa dikalangan JS/TS developer. Ratusan library / module sudah langsung muncul sejak hari pertama Deno dirilis. Sampai saat ini saya sudah meliihat lebih dari sepuluh web framework Deno yang sudah dibuat oleh komunitas. Yang paling populer adalah [Oak Server](https://deno.land/x/oak) namun karena saya tidak mau mainstream seperti orang lain maka saya memilih menggunakan [Attain web middleware framework](https://deno.land/x/attain), untuk itu saya juga membuat web project started untuk Attain framework, [Denamo](https://github.com/burhanahmeed/Denamo).
 

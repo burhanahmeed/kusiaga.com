@@ -73,8 +73,9 @@ export default function Home({allPosts}) {
                     >
                       {/* blog item */}
                       <div className="p-2">
-                        <div>
+                        <div className="flex items-center space-x-4">
                           <p className="text-xs text-gray-600">{formatDate(el.date)}</p>
+                          {el.lang &&  <span style={{ fontSize: '0.6rem' }} className="bg-gray-300 rounded-md px-3 py-1">{el.lang}</span>}
                         </div>
                         <p className="text-2xl font-bold hover:text-blue-600">
                           <Link href={`/posts/${el.slug}`}>{el.title}</Link>
@@ -100,7 +101,8 @@ export async function getStaticProps() {
     'date',
     'excerpt',
     'previewImage',
-    'slug'
+    'slug',
+    'lang'
   ])
 
   return {
