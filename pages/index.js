@@ -41,7 +41,7 @@ export default function Home({allPosts}) {
         </Head>
 
         <div>
-          <div className="flex items-center space-x-4 py-8">
+          <div className="flex items-center space-x-4 py-8 mx-4">
             <div>
               <img
                 className="w-16 h-16 rounded-full object-cover"
@@ -59,6 +59,7 @@ export default function Home({allPosts}) {
             variants={container}
             initial="hidden"
             animate="show"
+            className="mx-4"
           >
             <p className="font-bold text-xl">{'Recent posts'.toLocaleUpperCase()}</p>
             <span>I write about tech related topics but sometimes non-tech topics. Check my <a href="https://dev.to/burhanahmeed" target="_blank" className="link-border-bottom">DEV.to</a></span>
