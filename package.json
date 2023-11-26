@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@mdx-js/loader": "^1.6.19",
-    "@mdx-js/react": "^3.0.0",
     "@next/mdx": "^9.5.5",
     "dayjs": "^1.10.7",
     "disqus-react": "^1.1.5",
@@ -28,9 +27,15 @@
     "remark-html": "^13.0.1"
   },
   "devDependencies": {
+    "@mdx-js/react": "^1.6.22",
     "@netlify/plugin-nextjs": "^4.2.4",
     "autoprefixer": "^10.4.2",
     "postcss": "^8.4.6",
     "tailwindcss": "^3.0.18"
+  },
+  "overrides": {
+    "@mdx-js/react": {
+      "react": "$react"
+    }
   }
 }
