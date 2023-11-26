@@ -25,7 +25,7 @@ export default function IndexConsultant() {
         <title>Brhn. - Independent Software Consultant</title>
       </Head>
       <div>
-        <div className="container mx-auto poppins-font">
+        <div className="container max-w-3/4 mx-auto poppins-font">
           <div className="text-center pt-16">
             <div className="p-5">
               <img
@@ -88,28 +88,28 @@ export default function IndexConsultant() {
             <div class="pt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-4">
                 <div class="bg-white p-4 shadow-md rounded-xl text-center">
                   <div className="m-auto p-8">
-                      <img src="./img/consultant/automated-engineering.png" alt="" />
+                      <img src="./img/consultant/automated-engineering.png" className="w-24 m-auto" alt="" />
                     </div>
                     <p>Software System Design</p>
                 </div>
 
                 <div class="bg-white p-4 shadow-md rounded-xl text-center">
                   <div className="m-auto p-8">
-                      <img src="./img/consultant/computer.png" alt="" />
+                      <img src="./img/consultant/computer.png" alt="" className="w-24 m-auto" />
                     </div>
                     <p>Software Development</p>
                 </div>
 
                 <div class="bg-white p-4 shadow-md rounded-xl text-center">
                   <div className="m-auto p-8">
-                      <img src="./img/consultant/customer-journey-map.png" alt="" />
+                      <img src="./img/consultant/customer-journey-map.png" className="w-24 m-auto" alt="" />
                     </div>
                     <p>Performance Optimization</p>
                 </div>
 
                 <div class="bg-white p-4 shadow-md rounded-xl text-center">
                     <div className="m-auto p-8">
-                      <img src="./img/consultant/consultant.png" alt="" />
+                      <img src="./img/consultant/consultant.png" alt="" className="w-24 m-auto" />
                     </div>
                     <p>Software Consultancy</p>
                 </div>
