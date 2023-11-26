@@ -25,7 +25,7 @@ export default function IndexConsultant() {
         <title>Brhn. - Independent Software Consultant</title>
       </Head>
       <div>
-        <div className="container max-w-3/4 mx-auto poppins-font">
+        <div className="container mx-auto poppins-font p-4" style={{ maxWidth: '920px' }}>
           <div className="text-center pt-16">
             <div className="p-5">
               <img
