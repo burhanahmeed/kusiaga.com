@@ -7,7 +7,7 @@ export default function IndexConsultant() {
         <title>Brhn. - Independent Software Consultant</title>
       </Head>
       <div>
-        <div className="container mx-auto">
+        <div className="container mx-auto poppins-font">
           <div className="text-center pt-16">
             <div className="p-5">
               <img
@@ -28,9 +28,9 @@ export default function IndexConsultant() {
           </div>
 
           <div className="py-8 text-sm">
-            <h2 className="text-center text-4xl font-black">🚀 Unlock the Full Potential of Your IT Transformation with Expert Guidance</h2>
+            <h2 className="text-center text-base md:text-4xl font-bold">🚀 Unlock the Full Potential of Your IT Transformation with Expert Guidance</h2>
             <p>
-              Hello there! I'm <span className="text-xl font-bold text-yellow-600">BURHAN</span>, a seasoned software engineer and an independent software consultant. If you're aiming to propel your IT product development to new heights and scale your business to the moon, you're in the right place.
+              Hello there! I'm <span className="text-xl font-bold text-yellow-600">BURHAN</span>, a seasoned software engineer and an independent software consultant who has experience working with people across the world, from Indonesia, Ukraine, India, Singapose, etc. If you're aiming to propel your IT product development to new heights and scale your business to the moon, you're in the right place.
             </p>
 
             <div className="py-2">
@@ -66,7 +66,7 @@ export default function IndexConsultant() {
           </div>
 
           <div className="py-8">
-            <h2 className="text-center text-4xl font-black">⚓️ Skillset</h2>
+            <h2 className="text-center text-4xl font-bold">⚓️ Skillset</h2>
             <div class="pt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-4">
                 <div class="bg-white p-4 shadow-md">
                     <div>
@@ -93,7 +93,7 @@ export default function IndexConsultant() {
           </div>
 
           <div className="py-8">
-            <h2 className="text-center text-4xl font-black">🖼 My Works</h2>
+            <h2 className="text-center text-4xl font-bold">🖼 My Works</h2>
             <div className="pt-4 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4">
               <div className="max-w-sm mx-auto overflow-hidden bg-white rounded-xl shadow-md">
                   <img className="w-full h-48 object-cover" src="https://placekitten.com/401/300" alt="Card Image" />
@@ -121,7 +121,7 @@ export default function IndexConsultant() {
           </div>
 
           <div className="py-8 pb-16">
-            <h2 className="text-center text-4xl font-black">💳 Get Quotation</h2>
+            <h2 className="text-center text-4xl font-bold">💳 Get Quotation</h2>
 
               <div class="mb-4">
                   <label for="name" class="block text-gray-600">Name</label>

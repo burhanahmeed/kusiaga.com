@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
+
 /* padding */
 .p1 {padding: .25rem !important;}
 .p2 {padding: .75rem !important;}
@@ -151,3 +153,7 @@ a:hover {border-bottom: 1px solid #3B82F6;}
 
 /* cursor */
 .pointer {cursor: pointer;}
+
+.poppins-font {
+  font-family: 'Poppins', sans-serif;
+}
