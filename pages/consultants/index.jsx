@@ -85,29 +85,29 @@ export default function IndexConsultant() {
 
           <div className="py-8">
             <h2 className="text-center text-4xl font-bold">⚓️ Skillset</h2>
-            <div class="pt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-4">
-                <div class="bg-white p-4 shadow-md rounded-xl text-center">
+            <div className="pt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-4">
+                <div className="bg-white p-4 shadow-md rounded-xl text-center">
                   <div className="m-auto p-8">
                       <img src="./img/consultant/automated-engineering.png" className="w-24 m-auto" alt="" />
                     </div>
                     <p>Software System Design</p>
                 </div>
 
-                <div class="bg-white p-4 shadow-md rounded-xl text-center">
+                <div className="bg-white p-4 shadow-md rounded-xl text-center">
                   <div className="m-auto p-8">
                       <img src="./img/consultant/computer.png" alt="" className="w-24 m-auto" />
                     </div>
                     <p>Software Development</p>
                 </div>
 
-                <div class="bg-white p-4 shadow-md rounded-xl text-center">
+                <div className="bg-white p-4 shadow-md rounded-xl text-center">
                   <div className="m-auto p-8">
                       <img src="./img/consultant/customer-journey-map.png" className="w-24 m-auto" alt="" />
                     </div>
                     <p>Performance Optimization</p>
                 </div>
 
-                <div class="bg-white p-4 shadow-md rounded-xl text-center">
+                <div className="bg-white p-4 shadow-md rounded-xl text-center">
                     <div className="m-auto p-8">
                       <img src="./img/consultant/consultant.png" alt="" className="w-24 m-auto" />
                     </div>
