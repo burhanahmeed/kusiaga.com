@@ -59,7 +59,10 @@ export default function DetailModal({ showModal, handleModalClose, data }) {
                         width: '100%', // Specify the width of your div
                       }}
                     ></div>
-                    <div className='pt-6'>
+
+                    {data?.date && <span className="mt-5 inline-block bg-blue-500 text-white text-xs py-1 px-2 rounded-full">{data?.date}</span>}
+
+                    <div className='pt-4'>
                       <h3 className="text-lg font-medium leading-6 text-gray-900 flex justify-between">Descriptions</h3>
                       <div className='space-x-1 pt-4 text-gray-500 text-xs' dangerouslySetInnerHTML={{ __html: data?.detail }}></div>
                     </div>
