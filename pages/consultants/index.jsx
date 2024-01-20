@@ -1,17 +1,26 @@
 import Head from "next/head";
+import DetailModal from "@/components/consultant/DetailModal";
+import { useState } from "react";
 
 const myWorks = [
   {
-    title: 'TabSquare',
+    id: 1,
+    title: 'TabSquare Connect',
     description: 'This project is undisclosed because under Non-disclosure agreement.',
-    image: 'https://media.licdn.com/dms/image/C4E33AQEdbgnWKwqRqA/productpage-image_1128_635/0/1622827091606?e=2147483647&v=beta&t=xpbKnRz9J456-PO0YB_w_WX3maR-8nZ-aeHhW3MJVhs'
+    image: 'https://media.licdn.com/dms/image/C4E33AQEdbgnWKwqRqA/productpage-image_1128_635/0/1622827091606?e=2147483647&v=beta&t=xpbKnRz9J456-PO0YB_w_WX3maR-8nZ-aeHhW3MJVhs',
+    detail: 'Wokring on something',
+    achievement: 'Wokring on something',
+    technology: 'Node, Express, MySQL, Redis, DataDog, GCP, Optimization',
+    publicUrls: 'https://tabsquare.ai/smart-connect/'
   },
   {
+    id: 2,
     title: 'Rakuten RTX Property/Hotel App',
     description: 'This project is undisclosed because under Non-disclosure agreement.',
     image: 'https://ttgasia.2017.ttgasia.com/wp-content/uploads/sites/2/2021/08/Rakuten-Travel-Xchange-SS.jpg'
   },
   {
+    id: 3,
     title: 'Rakuten Travel Experiences',
     description: 'This project is undisclosed because under Non-disclosure agreement.',
     image: 'https://tourteller.com/blog/wp-content/uploads/2021/08/Rakuten-Travel-Experiences-Home.jpg'
@@ -19,6 +28,9 @@ const myWorks = [
 ];
 
 export default function IndexConsultant() {
+  const [modalOpen, setModalOpen] = useState(false);
+  const [modalData, setModalData] = useState(null);
+
   return (
     <>
       <Head>
@@ -122,7 +134,16 @@ export default function IndexConsultant() {
 
               {myWorks.map((val, i) => {
                 return (
-                  <MyWorkCard key={i} image={val.image} title={val.title} description={val.description} />
+                  <MyWorkCard
+                    onClick={() => {
+                      setModalOpen(true);
+                      setModalData(myWorks.find((e) => e.id === val.id));
+                    }}
+                    key={i}
+                    image={val.image}
+                    title={val.title}
+                    description={val.description}
+                  />
                 )
               })}
 
@@ -163,6 +184,8 @@ export default function IndexConsultant() {
               <button class="w-full px-4 py-2 bg-yellow-600 text-white rounded hover:bg-yellow-700 focus:outline-none">Get Quotation</button> */}
           </div>
 
+          <DetailModal showModal={modalOpen} handleModalClose={() => setModalOpen(false)} data={modalData} />
+
           {/* Footer  */}
           <footer class="text-center py-4 text-gray-600">
             <p>&copy; BRHN. 2023. All Rights Reserved.</p>
@@ -174,10 +197,10 @@ export default function IndexConsultant() {
 }
 
 const MyWorkCard = ({
-  image, title, description
+  image, title, description, onClick
 }) => {
   return (
-    <div className="max-w-sm mx-auto overflow-hidden bg-white rounded-xl shadow-md">
+    <div onClick={() => onClick()} className="max-w-sm mx-auto overflow-hidden bg-white rounded-xl shadow-md cursor-pointer">
       <img className="w-full h-48 object-cover" src={image} alt="Card Image" />
       <div className="p-4">
         <h2 className="font-semibold text-yellow-600 mb-2">{title}</h2>

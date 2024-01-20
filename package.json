@@ -9,6 +9,7 @@
     "export": "next build && next export"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.18",
     "@mdx-js/loader": "^1.6.19",
     "@next/mdx": "^9.5.5",
     "dayjs": "^1.10.7",
