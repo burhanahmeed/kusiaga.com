@@ -4,7 +4,6 @@ import styles from '../styles/Home.module.css'
 import { getAllPosts } from '../lib/creationApi'
 import { useEffect, useState } from 'react'
 import { motion } from "framer-motion"
-import ProjectSection from '@/components/consultant/ProjectSection'
 
 const CreationItem = ({ data }) => {
   let coverImg = data.coverImage
@@ -74,7 +73,15 @@ export default function Creations({ allPosts }) {
             initial="hidden"
             animate="show"
           >
-            <ProjectSection />
+            {
+              allPosts.map(el => {
+                return (
+                  <motion.div variants={item}>
+                    <CreationItem data={el} />
+                  </motion.div>
+                )
+              })
+            }
           </motion.div>
         </main>
 
