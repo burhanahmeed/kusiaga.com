@@ -48,7 +48,7 @@ export default function IndexConsultant() {
 
             <div className="py-2">
               <ul>
-                <li><strong>Fractional CTO:</strong> Strategize and lead your technology initiatives.</li>
+                {/* <li><strong>Fractional CTO:</strong> Strategize and lead your technology initiatives.</li> */}
                 <li><strong>Team/Tech Lead:</strong> Drive your development team to excellence.</li>
                 <li><strong>Engineer:</strong> Provide hands-on expertise.</li>
                 <li><strong>Full IT Development Services:</strong> I bring along my dedicated team to ensure a comprehensive solution.</li>

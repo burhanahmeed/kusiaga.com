@@ -1,5 +1,7 @@
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment } from 'react'
+import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
 export default function DetailModal({ showModal, handleModalClose, data }) {
   function closeModal() {
@@ -8,6 +10,7 @@ export default function DetailModal({ showModal, handleModalClose, data }) {
 
   const techs = (data?.technology || 'None').split(',');
   const urls = (data?.publicUrls || 'None').split(',');
+  const images = data?.galleries || (data?.image || 'None').split(',');
 
   return (
     <>
@@ -51,14 +54,27 @@ export default function DetailModal({ showModal, handleModalClose, data }) {
                     </button>
                   </Dialog.Title>
                   <div className="mt-2">
-                    <div
+                    {/* <div
                       style={{
                         background: `url("${data?.image}")`, // Replace with the actual path to your image
                         backgroundSize: 'cover', // Adjust as needed (cover, contain, etc.)
                         height: '250px', // Specify the height of your div
                         width: '100%', // Specify the width of your div
                       }}
-                    ></div>
+                    ></div> */}
+                    <Carousel>
+                        {images.map((image, index) => (
+                          <div
+                            key={index}
+                            style={{
+                              background: `url("${image}")`, // Replace with the actual path to your image
+                              backgroundSize: 'cover', // Adjust as needed (cover, contain, etc.)
+                              height: '250px', // Specify the height of your div
+                              width: '100%', // Specify the width of your div
+                            }}
+                          ></div>
+                        ))}
+                    </Carousel>
 
                     {data?.date && <span className="mt-5 inline-block bg-blue-500 text-white text-xs py-1 px-2 rounded-full">{data?.date}</span>}
 
