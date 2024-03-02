@@ -8,7 +8,7 @@
         "achievement": "<ul><li style=\"list-style-type:disc\"><span style=\"font-size:10pt\"><span style=\"font-family:Calibri,sans-serif\"><span style=\"\"><strong>Led</strong></span></span></span><span style=\"font-size:10pt\"><span style=\"font-family:Calibri,sans-serif\"><span style=\"\">&nbsp; small team of dev and QA of the SmartConnect squad to provide technical improvements and optimization.</span></span></span></li><li style=\"list-style-type:disc\"><span style=\"font-size:10pt\"><span style=\"font-family:Calibri,sans-serif\"><span style=\"\">Achieved</span></span></span><span style=\"font-size:10pt\"><span style=\"font-family:Calibri,sans-serif\"><span style=\"\"><strong>a significant reduction</strong></span></span></span><span style=\"font-size:10pt\"><span style=\"font-family:Calibri,sans-serif\"><span style=\"\">in multiple services response time, decreasing it by over 80% (from 10+ seconds to 2 seconds or less) by moving the services to GKE and did a query optimization, caching, etc.</span></span></span></li><li style=\"list-style-type:disc\"><span style=\"font-size:10pt\"><span style=\"font-family:Calibri,sans-serif\"><span style=\"\"><strong>Ensured </strong></span></span></span><span style=\"font-size:10pt\"><span style=\"font-family:Calibri,sans-serif\"><span style=\"\">the code quality aligns with the best practice by implementing code review, unit test, and prettier.</span></span></span></li><li style=\"list-style-type:disc\"><span style=\"font-size:10pt\"><span style=\"font-family:Calibri,sans-serif\"><span style=\"\">Managed identification and resolution of performance and memory issues, applying optimizations for improved system efficiency and stability.</span></span></span></li></ul>",
         "technology": "Node, Express, MySQL, Redis, DataDog, GCP, Optimization",
         "publicUrls": "https://tabsquare.ai/smart-connect/",
-        "date": "2022 - now"
+        "date": "2022 - 2024"
     },
     {
         "id": 2,
@@ -62,10 +62,10 @@
             "/img/consultant-assets/logizee-4.png",
             "/img/consultant-assets/logizee-5.png"
         ],
-        "detail": "<p>Sultan Ads is a Facebook automation tool for Sultan Ads to help them manage their Facebook ads and campaigns. It will help advertiser to manage their ads budget and prevent them exceeding their desired budget. It also has an ability to create an ad campaign in bulk from specific filter that user deciede.</p>",
-        "achievement": "<ul><li style=\"list-style-type:disc\">Initialized and built a scalable system serving over 1000 users using NodeJS, NuxtJS, and MongoDB as founding engineer.</li><li style=\"list-style-type:disc\">Resolved MongoDB performance issues by optimizing read and write bottlenecks in ad logging features and achieved significant reduction in API latency by optimizing MongoDB indexing and querying for 200 rows of logger data.</li><li style=\"list-style-type:disc\">Reducing frontend data loading time by implementing frontend localstorage cache.</li><li style=\"list-style-type:disc\">Improving the architecture and removing code redundancy in ads/campaign management.</li></ul>",
-        "technology": "React Hooks, NextJS, Laravel, PosgreSQL, Firebase",
+        "detail": "<p>Logizee is a logistic app to help company manager their driver, truck, and delivery. It will take care th truck plat expiration and tax reminder.</p><p>&nbsp;</p><p>It has several feature:</p><p>- Trucking management</p><p>- Driver management</p><p>- Delivery management</p><p>- Truck tracking</p>",
+        "achievement": "<p>- Building entire tracking system from frontend to backend</p><p>- Designing tracking and notification system, including read notification trigger</p><p>- Building tracking map to track truck by mobile app and GPS hardware device</p><p>- Connecting the system using partner GPS API</p>",
+        "technology": "React Hooks, NextJS, Laravel, PosgreSQL, Firebase, MapBox, Leaflet, GPS API",
         "publicUrls": "https://logizee.com/",
-        "date": "2022 - 2023"
+        "date": "2022"
     }
 ]
