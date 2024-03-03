@@ -67,5 +67,23 @@
         "technology": "React Hooks, NextJS, Laravel, PosgreSQL, Firebase, MapBox, Leaflet, GPS API",
         "publicUrls": "https://logizee.com/",
         "date": "2022"
+    },
+    {
+        "id": 6,
+        "title": "Better Youth App",
+        "description": "Mobile web app for Better Youth to help them manage their program and event.",
+        "image": "/img/consultant-assets/logizee-1.png",
+        "galleries": [
+            "/img/consultant-assets/logizee-1.png",
+            "/img/consultant-assets/logizee-2.png",
+            "/img/consultant-assets/logizee-3.png",
+            "/img/consultant-assets/logizee-4.png",
+            "/img/consultant-assets/logizee-5.png"
+        ],
+        "detail": "<p>Logizee is a logistic app to help company manager their driver, truck, and delivery. It will take care th truck plat expiration and tax reminder.</p><p>&nbsp;</p><p>It has several feature:</p><p>- Trucking management</p><p>- Driver management</p><p>- Delivery management</p><p>- Truck tracking</p>",
+        "achievement": "<p>- Building entire tracking system from frontend to backend</p><p>- Designing tracking and notification system, including read notification trigger</p><p>- Building tracking map to track truck by mobile app and GPS hardware device</p><p>- Connecting the system using partner GPS API</p>",
+        "technology": "Frontend development, NextJS, TailwindCSS, AntDesign, Firebase",
+        "publicUrls": "https://mkm.betteryouth.id/",
+        "date": "2022"
     }
 ]
