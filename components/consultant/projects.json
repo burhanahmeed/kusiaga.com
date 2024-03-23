@@ -72,18 +72,18 @@
         "id": 6,
         "title": "Better Youth App",
         "description": "Mobile web app for Better Youth to help them manage their program and event.",
-        "image": "/img/consultant-assets/logizee-1.png",
+        "image": "/img/consultant-assets/byf-1.png",
         "galleries": [
-            "/img/consultant-assets/logizee-1.png",
-            "/img/consultant-assets/logizee-2.png",
-            "/img/consultant-assets/logizee-3.png",
-            "/img/consultant-assets/logizee-4.png",
-            "/img/consultant-assets/logizee-5.png"
+            "/img/consultant-assets/byf-1.png",
+            "/img/consultant-assets/byf-2.png",
+            "/img/consultant-assets/byf-3.png",
+            "/img/consultant-assets/byf-4.png",
+            "/img/consultant-assets/byf-5.png"
         ],
-        "detail": "<p>Logizee is a logistic app to help company manager their driver, truck, and delivery. It will take care th truck plat expiration and tax reminder.</p><p>&nbsp;</p><p>It has several feature:</p><p>- Trucking management</p><p>- Driver management</p><p>- Delivery management</p><p>- Truck tracking</p>",
-        "achievement": "<p>- Building entire tracking system from frontend to backend</p><p>- Designing tracking and notification system, including read notification trigger</p><p>- Building tracking map to track truck by mobile app and GPS hardware device</p><p>- Connecting the system using partner GPS API</p>",
+        "detail": "<p>A mobile web app to manage event, participant, and absent for a youth community.&nbsp;</p><p>It can register participant for a particular event and generates barcode for later to be used for confirmation.</p><p>For the event officer they can scan the barcode for confirmation upon arriving to the event venue.</p><p>After the user register an event, prior the event time they will get a web notification that's handled via Firebase messaging.</p>",
+        "achievement": "<ul><li>- Setup NextJS from scratch and building reusable layout, like Container, Header, Navbar.</li><li>- Implementing scanner feature and make sure it didn't call the API for multiple time during scanning.</li><li>- API integration.</li><li>- Setup authentication using internal API strategy.</li></ul>",
         "technology": "Frontend development, NextJS, TailwindCSS, AntDesign, Firebase",
         "publicUrls": "https://mkm.betteryouth.id/",
-        "date": "2022"
+        "date": "2023"
     }
 ]
