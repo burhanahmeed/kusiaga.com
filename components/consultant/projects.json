@@ -85,5 +85,13 @@
         "technology": "Frontend development, NextJS, TailwindCSS, AntDesign, Firebase",
         "publicUrls": "",
         "date": "2023"
+    },
+    {
+        "id": 7,
+        "title": "WalimahApp: No Code Website Invitation Builder",
+        "description": "Initiate, design, and build the entire project along with one other co-founder. The project was initialy meant to be a no-code platform to build a wedding site.",
+        "type": "iframe",
+        "iframeLink": "walimah-invitation-builder",
+        "image": "/img/projects/walimah-home-page.png"
     }
 ]
