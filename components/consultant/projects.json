@@ -48,7 +48,9 @@
         "achievement": "<ul><li style=\"list-style-type:disc\">Initialized and built a scalable system serving over 1000 users using NodeJS, NuxtJS, and MongoDB as founding engineer.</li><li style=\"list-style-type:disc\">Resolved MongoDB performance issues by optimizing read and write bottlenecks in ad logging features and achieved significant reduction in API latency by optimizing MongoDB indexing and querying for 200 rows of logger data.</li><li style=\"list-style-type:disc\">Reducing frontend data loading time by implementing frontend localstorage cache.</li><li style=\"list-style-type:disc\">Improving the architecture and removing code redundancy in ads/campaign management.</li></ul>",
         "technology": "Sentry, NuxtJS, ExpressJS, MySQL, MongoDB, Alibaba Cloud, Redis, Sequelize",
         "publicUrls": "https://sultanads.com/, https://app.sultanads.com/",
-        "date": "2019 - 2021"
+        "date": "2019 - 2021",
+        "type": "iframe",
+        "iframeLink": "sultan-ads-saas"
     },
     {
         "id": 5,

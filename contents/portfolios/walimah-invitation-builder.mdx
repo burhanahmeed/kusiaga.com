@@ -23,12 +23,12 @@ There were some problems that we had to solve while building this project.
 
 #### 1. Building customizable components and database
 
-The considerasion between no-code at all vs. flexible low code was very tough. We had to make sure that the user can build the entire website without any code. That's why we had to build a customizable database and components. The problems came when there is more  component variation and we had to build a component for each variation. This will make the website wont really have customizable style, the style will be fixed at some variants.
+The consideration between no-code at all vs. flexible low code was very tough. We had to make sure that the user can build the entire website without any code. That's why we had to build a customizable database and components. The problems came when there were more component variations and we had to build a component for each variation. This would make the website not really have a customizable style, as the style would be fixed to some variants.
 
-Other solution is by using flexible low-code, where at some points the user will require to know some basic HTML/CSS code to add the styling, but the problems didnt stop here, this will make the UX less attractive.
+Another solution is by using flexible low-code, where at some points the user will require knowing some basic HTML/CSS code to add the styling, but the problems didn't stop here. This would make the UX less attractive.
 
 #### 2. Caching
 
-Caching and data invalidation were pretty tough as well. We extensively fetching and updating the data in real time where anyting updated from the UI to the server. This was a problem because we had to make sure that the data is not being fetched multiple times.
+Caching and data invalidation were pretty tough as well. We were extensively fetching and updating the data in real-time where anything updated from the UI was sent to the server. This was a problem because we had to make sure that the data was not being fetched multiple times.
 
-The cache will only happen within the client side, but on on the panel builder side.
+The cache will only happen within the client side, but not on the panel builder side.

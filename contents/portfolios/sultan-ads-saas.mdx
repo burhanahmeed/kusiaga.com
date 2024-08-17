@@ -1,8 +1,66 @@
 ---
 name: 'Sultan Ads: FB Ads automation'
 date: '2019-05-25'
-thumbnail: '/img/projects//sultan-ads-ad-page.png'
-description: 'Being the first engineer to build and design the system, build new feature and bug fix after launch. Also handle some DevOps stuffs.'
+thumbnail: '/img/projects/sultan-ads-ad-page.png'
+description: 'Being the consultant to build and design the system, build new feature and bug fix after launch. Also handle some DevOps stuffs.'
 tag: Work,Express,Nuxt,Vuex,MySQL,MongoDB,Alibaba Cloud
 ---
 
+## Introduction
+
+Sultan Ads is a platform designed to automate and optimize Facebook Ads campaigns. It aims to simplify the process of managing and scaling Facebook advertising efforts, making it easier for businesses to achieve better results with less manual effort.
+
+<div style="overflow: scroll" class="flex flex-wrap justify-between space-y-4 space-x-4">
+  <img width="60%" class="mb-4" src="/img/consultant-assets/sultan-ads-1.png" />
+  <img width="60%" class="mb-4" src="/img/consultant-assets/sultan-ads-2.png" />
+  <img width="60%" class="mb-4" src="/img/consultant-assets/sultanads-3.png" />
+  <img width="60%" class="mb-4" src="/img/consultant-assets/sultanads-4.png" />
+  <img width="60%" class="mb-4" src="/img/consultant-assets/sultanads-5.png" />
+</div>
+
+### Key Features
+
+1. **Automation**: Automates various aspects of Facebook Ads management, such as campaign creation, optimization, and reporting.
+2. **Optimization**: Uses algorithms and data analysis to optimize ad performance, ensuring that ads reach the right audience and achieve the desired results.
+3. **Integration**: Integrates with Facebook's advertising platform, allowing users to manage their ads directly from the Sultan Ads interface.
+4. **Analytics**: Provides detailed analytics and reporting to help users understand the performance of their ads and make data-driven decisions.
+5. **User-Friendly Interface**: Designed to be easy to use, even for those who may not have extensive experience with Facebook Ads.
+
+### Benefits
+
+- **Time-Saving**: Reduces the time and effort required to manage Facebook Ads campaigns.
+- **Improved Performance**: Helps achieve better ad performance through optimization and data analysis.
+- **Scalability**: Makes it easier to scale ad campaigns and manage larger advertising budgets.
+- **Cost-Effective**: Can help reduce advertising costs by improving the efficiency and effectiveness of ad spend.
+
+### Target Audience
+
+- **Small and Medium Businesses (SMBs)**: Businesses looking to improve their Facebook Ads performance without investing significant time and resources.
+- **Digital Marketers**: Marketing professionals who manage multiple ad campaigns and need a tool to streamline their workflow.
+- **Agencies**: Advertising agencies that manage Facebook Ads for multiple clients and need a scalable solution.
+
+## Challenges
+
+- **Handling CPU and Memory Usage**: Managing CPU and memory usage on a static CPU core setup with no auto-scaling capabilities. The system is constrained to 16GB of RAM and 8 CPU cores, requiring efficient resource management.
+
+- **Database Read and Insert Race Condition**: Addressing race conditions that occur during database read and insert operations, especially when executing thousands of data transactions simultaneously.
+
+- **Slow Log Data Reading**: Improving the performance of reading log data, which consists of 200 million rows, to ensure timely data retrieval and processing.
+
+## Solutions
+
+- **Database Optimization and Indexing**: Implemented optimization techniques and added indexing to the database to enhance query performance and reduce the time required for data retrieval.
+
+- **Delayed Bulk Insert**: Introduced a delay in data insertion by caching the data to be inserted and performing bulk inserts instead. This approach ensures that data read operations are prioritized and executed first, reducing the likelihood of race conditions.
+
+- **Load Distribution Across Cores**: Improved job load distribution across CPU cores. Initially, a modulus operation was used to distribute the load,by using the modulus operation, the load distribution became more balanced and efficient, enhancing overall system performance. But sometimes led to unequal distribution. We then endup by enhancing PM2 load balancer to distribute the load more evenly.
+
+## Achievements
+
+Successfully managed to attract and onboard an additional 1,000 users during the product launch phase, significantly expanding the user base and increasing initial engagement.
+
+Efficiently handled and optimized a massive dataset consisting of 200 million rows, ensuring that data retrieval and processing were performed swiftly and accurately to maintain system performance and reliability.
+
+Enhanced the rule scheduler system to ensure it operates seamlessly and without interruptions, thereby improving the overall user experience and system dependability.
+
+Addressed and resolved performance issues related to memory and CPU usage on a static cloud VPS by strategically distributing the load across multiple cores, leading to more efficient resource utilization and improved system stability.
