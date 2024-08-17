@@ -7,21 +7,27 @@ import Button from '@/components/Button'
 import { getSingleContent, getContents } from '@/lib/fetchContent'
 import MarkdownToHtml from '@/lib/markdownToHtml'
 import markdownStyles from '@/styles/Markdown.module.css'
+import { useRouter } from 'next/router'
 
 const FilePath = 'contents/portfolios'
 
 export default function Portfolio({ content }) {
+  const router = useRouter();
+
   return (
     <Container>
       <Head>
         <title>{ content.name } | Brhn.</title>
       </Head>
-      <div className="my-4">
-        <Button to="/portfolio">
-          <span>←</span>
-          <span>Portfolio</span>
-        </Button>
-      </div>
+
+      {router.query.noBackButton ? '' : (
+        <div className="my-4">
+          <Button to="/portfolio">
+            <span>←</span>
+            <span>Portfolio</span>
+          </Button>
+        </div>
+      )}
 
       <div className="mt-10">
         <h1 className="text-4xl font-bold">{ content.name }</h1>
