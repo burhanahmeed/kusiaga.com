@@ -1,11 +1,34 @@
 ---
-name: 'Walimah App: Invitation Builder'
+name: 'WalimahApp: No Code Invitation Builder'
 date: '2021-05-25'
 thumbnail: '/img/projects//walimah-home-page.png'
 description: 'Initiate, design, and build the entire project along with one other co-founder. The project was initialy meant to be a no-code platform to build a wedding site.'
-tag: Side project,Express,Nuxt,Vuex,MySQL
+tag: Express,Nuxt,Vuex,MySQL
 ---
 
-# Introduction
+## Introduction
 
-Lorem ipsum
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6o03ZAwlj0E?si=JfQinbDmmbQvTxEi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+WalimahApp is a no code web invitation builder. Making it easy for non technical person to build his own wedding website.
+
+## Problems
+
+There were some problems that we had to solve while building this project.
+-   **Building customizable components**
+-   **Building a customizable database**
+-   **Data caching**
+
+## Solutions
+
+#### 1. Building customizable components and database
+
+The considerasion between no-code at all vs. flexible low code was very tough. We had to make sure that the user can build the entire website without any code. That's why we had to build a customizable database and components. The problems came when there is more  component variation and we had to build a component for each variation. This will make the website wont really have customizable style, the style will be fixed at some variants.
+
+Other solution is by using flexible low-code, where at some points the user will require to know some basic HTML/CSS code to add the styling, but the problems didnt stop here, this will make the UX less attractive.
+
+#### 2. Caching
+
+Caching and data invalidation were pretty tough as well. We extensively fetching and updating the data in real time where anyting updated from the UI to the server. This was a problem because we had to make sure that the data is not being fetched multiple times.
+
+The cache will only happen within the client side, but on on the panel builder side.
