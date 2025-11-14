@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "next build && next export"
+    "export": "next build && next export",
+    "prebuild": "node scripts/generate-sitemap.js",
+    "preexport": "node scripts/generate-sitemap.js"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.18",
