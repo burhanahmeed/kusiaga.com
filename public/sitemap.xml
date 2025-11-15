@@ -25,20 +25,9 @@
     <loc>https://brhn.my.id/portfolio</loc>
     <changefreq>monthly</changefreq>
   </url>
-
   <url>
-    <loc>https://brhn.my.id/posts/membuat-blog-dengan-vue-js-dan-netlify-cms</loc>
-    <lastmod>2020-04-25T17:00:00.000Z</lastmod>
-    <changefreq>yearly</changefreq>
-  </url>
-  <url>
-    <loc>https://brhn.my.id/posts/lesson-learned-after-one-week-launching-my-business-quietly</loc>
-    <lastmod>2021-05-23T19:11:58.682Z</lastmod>
-    <changefreq>yearly</changefreq>
-  </url>
-  <url>
-    <loc>https://brhn.my.id/posts/dynamic-rendering-solusi-sederhana-untuk-spa-ketika-dibagikan-ke-sosial-media</loc>
-    <lastmod>2020-05-10T05:35:07.322Z</lastmod>
+    <loc>https://brhn.my.id/posts/ci-cd-my-dirty-way</loc>
+    <lastmod>2021-04-08T13:11:58.682Z</lastmod>
     <changefreq>yearly</changefreq>
   </url>
   <url>
@@ -47,19 +36,13 @@
     <changefreq>yearly</changefreq>
   </url>
   <url>
-    <loc>https://brhn.my.id/posts/ci-cd-my-dirty-way</loc>
-    <lastmod>2021-04-08T13:11:58.682Z</lastmod>
+    <loc>https://brhn.my.id/posts/lesson-learned-after-one-week-launching-my-business-quietly</loc>
+    <lastmod>2021-05-23T19:11:58.682Z</lastmod>
     <changefreq>yearly</changefreq>
   </url>
   <url>
-    <loc>https://brhn.my.id/posts/bagaimana-saya-membuat-manipulasi-zona-waktu-time-ts-pada-deno</loc>
-    <lastmod>2020-06-07T02:11:58.682Z</lastmod>
-    <changefreq>yearly</changefreq>
-  </url>
-
-  <url>
-    <loc>https://brhn.my.id/portfolio/walimah-invitation-builder</loc>
-    <lastmod>2021-05-25</lastmod>
+    <loc>https://brhn.my.id/portfolio/link-sortener-kusiaga</loc>
+    <lastmod>2017-01-10</lastmod>
     <changefreq>yearly</changefreq>
   </url>
   <url>
@@ -68,8 +51,8 @@
     <changefreq>yearly</changefreq>
   </url>
   <url>
-    <loc>https://brhn.my.id/portfolio/link-sortener-kusiaga</loc>
-    <lastmod>2017-01-10</lastmod>
+    <loc>https://brhn.my.id/portfolio/walimah-invitation-builder</loc>
+    <lastmod>2021-05-25</lastmod>
     <changefreq>yearly</changefreq>
   </url>
 </urlset>
